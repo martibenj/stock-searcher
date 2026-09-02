@@ -1,0 +1,12 @@
+[Unit]
+Description=Stock Searcher
+
+[Service]
+WorkingDirectory=/opt/stock-searcher
+ExecStart=/opt/stock-searcher/stock-searcher.sh
+Type=simple
+User=stock-searcher
+Group=stock-searcher
+
+[Install]
+WantedBy=default.target
